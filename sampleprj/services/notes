@@ -1,0 +1,2 @@
+sudo ln -s /sandbox/sampleprj/services/nginx/django.conf /etc/nginx/sites-enabled/
+sudo ln -s /sandbox/sampleprj/services/supervisord/supervisord.conf /etc/supervisor/conf.d/

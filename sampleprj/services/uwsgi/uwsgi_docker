@@ -1,0 +1,7 @@
+[uwsgi]
+socket = /home/docker/code/crudbuilder.sock
+master = true
+processes = 4
+chdir = /home/docker/code/
+module=crudbuilder_example.wsgi:application
+chmod-socket=666

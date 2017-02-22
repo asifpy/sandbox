@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+    <div class="container">
+        <h3>Examples</h3>
+        <hr/>
+        <table class="table table-bordered table-condensed">
+        <thead>
+        	<tr>
+        		<th>Name</th>
+        		<th>Description</th>
+        	</tr>
+        </thead>
+        <tbody>
+        	<tr>
+        		<td><a href="{% url 'app-band-list' %}">App</a></td>
+        		<td>Example of normal CRUD operations with single instance</td>
+        	</tr>
+        	<tr>
+        		<td><a href="">Inline</a></td>
+        		<td>Example of CRUD operations for parent child relationship (Inline Formset) </td>
+        	</tr>
+            <tr>
+                <td><a href="">Model Formset</a></td>
+                <td>Example of CRUD operations for Model formset </td>
+            </tr>
+        </tbody>
+        </table>
+    	
+    </div>
+{% endblock %}
